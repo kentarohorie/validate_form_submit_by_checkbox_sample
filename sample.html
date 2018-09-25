@@ -1,0 +1,24 @@
+<div class="form">
+  <label>name</label>
+  <input type="text" name="your-name" />
+
+  <input type="checkbox" id="form-checkbox">
+  <label>上記の入力内容を確認してチェックを御願い致します。</label>
+
+  <input type="submit" class="btn" value="送信" id="form-submit" disabled>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script>
+$checkbox = $('#form-checkbox')
+$checkbox.click(function() {
+  if ($checkbox.prop('checked')) {
+    $('#form-submit').removeAttr('disabled')
+  } else {
+    $('#form-submit').attr('disabled', 'disabled')
+  }
+})
+</script>
