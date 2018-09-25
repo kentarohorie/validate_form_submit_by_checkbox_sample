@@ -13,12 +13,13 @@
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 <script>
-$checkbox = $('#form-checkbox')
-$checkbox.click(function() {
-  if ($checkbox.prop('checked')) {
-    $('#form-submit').removeAttr('disabled')
-  } else {
-    $('#form-submit').attr('disabled', 'disabled')
-  }
-})
+  $checkbox = $('#form-checkbox')
+
+  $checkbox.click(function() {
+    if ($checkbox.prop('checked')) {
+      $('#form-submit').removeAttr('disabled')
+    } else {
+      $('#form-submit').attr('disabled', 'disabled')
+    }
+  })
 </script>
